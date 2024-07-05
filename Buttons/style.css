@@ -1,0 +1,37 @@
+body {
+    max-width: 100%;
+}
+
+button {
+    top: 1;
+    position: absolute;
+    width: 10vw;
+    height: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+}
+
+button div svg {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button:hover div svg {
+    animation: rotate 1.5s ease-in-out infinite;
+}
+
+@keyframes rotate {
+    0% {
+        rotate: 0deg;
+    }
+    100% {
+        rotate: 360deg;
+    }
+}
